@@ -1,0 +1,22 @@
+package test;
+
+import java.util.Scanner;
+
+public class test001 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int start = 0;
+		int end = 0;
+		int sum = 0;
+		System.out.println("시작값");
+		start = scan.nextInt();
+		System.out.println("끝값");
+		end = scan.nextInt();
+		
+		for(int i = start; i <= end; i ++) {
+			sum += i;
+		}
+		System.out.println("시작값" + start + "부터" + "끝값" + end + "까지의 합은 : " + sum);
+	}
+}

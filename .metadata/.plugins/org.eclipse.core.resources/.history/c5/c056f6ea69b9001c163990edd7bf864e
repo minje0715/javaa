@@ -1,0 +1,43 @@
+package d03_220406;
+
+import java.util.Scanner;
+
+public class Q {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		int score = 0;
+		String result; //result 초깃값 X
+		
+		System.out.print("점수를 입력하세요: ");
+		score = scan.nextInt();
+		scan.close();
+		
+		if (score >= 0 && score <= 100) {
+			if (score >= 90) {
+				if (score >= 95) {
+					result = "A+";
+				} else {
+					result = "A0";
+				}
+			} else if (score >= 80) {
+				result = "B";
+			} else if (score >= 70) {
+				result = "C";
+			} else if (score >= 60) {
+				result = "D";
+			} else {
+				result = "F";
+			}
+			
+		} else {
+			//result = "";
+			System.out.println("입력범위를 초과하였습니다.");
+		}
+		System.out.println(result + "학점 입니다.");	// result 변수를 if{} 안에서만 쓴다는 보장이 없기때문에 
+	}												// else{} 안에 result=""; 코드가 없으면
+													// System.out.println(result + "학점 입니다.");에 있는
+}													// result 변수에 값이 주어지지 않았기 때문에 오류가 남
+													// !!!!!!!!!따라서 변수 선언시에 초깃값을 꼭 주는 것이 중요!!!!!!!!

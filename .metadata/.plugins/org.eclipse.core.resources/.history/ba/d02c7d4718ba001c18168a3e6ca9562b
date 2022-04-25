@@ -1,0 +1,17 @@
+package day0412;
+
+import java.util.Scanner;
+
+public class day0412_3 {
+
+	public static void main(String[] args) {
+
+		int[] arr = { 3, 2, 1, 5, 4 };
+		int temp = 0;
+		
+		for(int i = 0; i < arr.length; i++) {
+			System.out.println("¹è¿­Àü");
+			System.out.print(arr[i]);
+		}
+	}
+}

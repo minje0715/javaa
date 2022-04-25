@@ -1,0 +1,19 @@
+package test;
+
+import java.util.Scanner;
+
+public class test001 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int num = 0;
+		
+		num = scan.nextInt();
+		if(num % 2 == 0) {
+			System.out.println("Â¦¼ö");
+		}else {
+			System.out.println("È¦¼ö");
+		}
+		System.out.println(num);
+	}
+}

@@ -1,0 +1,18 @@
+package day0412;
+
+import java.util.Scanner;
+
+public class day0412_3 {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {3, 2, 1, 5, 4}; 
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Á¤·ÄÀü : " + arr[]);
+		for(int i = 0; i < arr.length; i++) {
+			
+		}
+	}
+
+}

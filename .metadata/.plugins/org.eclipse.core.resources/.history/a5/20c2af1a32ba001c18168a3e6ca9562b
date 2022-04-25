@@ -1,0 +1,24 @@
+package test;
+
+import java.util.Scanner;
+
+public class test001 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int text = scan.nextInt();
+		int num1 = 0;
+		int num2 = 0;
+		int sum = 0;
+		String str = "";
+		
+		for(int i = 1; i <= text; i++) {
+			num1 = scan.nextInt();
+			num2 = scan.nextInt();
+			sum = (num1 + num2);
+			str += sum;
+			
+		}
+		System.out.print(str);
+	}
+}

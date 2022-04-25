@@ -1,0 +1,32 @@
+package day0412;
+
+import java.util.Scanner;
+
+public class day0412_2 {
+
+	public static void main(String[] args) {
+		// 500 100 50 10
+		// 680
+		Scanner scan = new Scanner(System.in);
+		int coins[] = { 500, 100, 50, 10 };
+		int money = 0;
+
+		while (true) {
+			System.out.print("거스름돈 입력 : ");
+			money = scan.nextInt();
+			for(int i = 0; i < coins.length; i++) {
+				if(coins[0] <= money) {
+					System.out.println(coins[0]);
+				}if(coins[1] <= money) {
+					System.out.println(coins[1]);
+				}if(coins[2] <= money) {
+					System.out.println(coins[2]);
+				}if(coins[3] <= money) {
+					System.out.println(coins[3]);
+				}
+			}
+		}
+
+	}
+
+}

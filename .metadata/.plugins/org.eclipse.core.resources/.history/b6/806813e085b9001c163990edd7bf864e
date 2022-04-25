@@ -1,0 +1,23 @@
+package test;
+
+import java.util.Scanner;
+
+public class test001 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int num1 = 0;
+		int num2 = 0;
+		int T = 0;
+		int sum = 0;
+		
+		T = scan.nextInt();
+		for(int i = 1; i <= T; i++ ) {
+			num1 = scan.nextInt();
+			num2 = scan.nextInt();
+			for(int j =1; j <= T; j++)
+			sum = (num1 + num2);
+			System.out.println(sum);
+		}
+	}
+}

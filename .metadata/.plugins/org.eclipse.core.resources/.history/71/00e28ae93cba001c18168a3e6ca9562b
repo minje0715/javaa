@@ -1,0 +1,29 @@
+package test;
+
+import java.util.Scanner;
+
+public class test2884 {
+
+	public static void main(String[] args) {
+		/* while문을 이용하여 1부터 10까지의 합계 출력
+		 * 일단 합계만 출력해보고 1 + 2 + ~~~ `10 = 55도 출력해보세요
+		 */
+		Scanner scan = new Scanner(System.in);
+		int sum = 0;
+		boolean run = true;
+		
+		while(run) {
+			for(int i = 1; i <= 10; i++) {
+				sum += i;
+				if(i < 10) {
+					System.out.println("+");
+				}if(i == 10) {
+					System.out.println("=");
+				}
+			}
+			System.out.println(sum);
+		}
+	
+	}
+
+}
