@@ -7,7 +7,7 @@ import day0427.HumanDTO;
 
 public class MemberRepository {
 	static List<MemberDTO> memberList = new ArrayList<>();
-
+	
 	public void save(MemberDTO member) {
 		memberList.add(member);
 		for (int i = 0; i < memberList.size(); i++) {
@@ -72,5 +72,7 @@ public class MemberRepository {
 		}
 
 	}
+	
+	
 
 }

@@ -31,7 +31,7 @@ public class MemberService {
 			mr.save(member);
 		}
 	}
-	
+
 	void findAll() {
 		List<MemberDTO> memberList = mr.findAll();
 		for (MemberDTO member : memberList) {
@@ -41,9 +41,9 @@ public class MemberService {
 	}
 
 	void login() {
-		System.out.print("아이디를 입력하세요 : ");
+		System.out.print("아이디 입력: ");
 		String memberId = scan.next();
-		System.out.print("비밀번호를 입력하세요 : ");
+		System.out.print("비밀번호 입력: ");
 		String memberPassword = scan.next();
 		boolean logincheck = mr.m(memberId, memberPassword);
 		if (logincheck) {
@@ -54,7 +54,7 @@ public class MemberService {
 	}
 
 	void findById() {
-		System.out.print("아이디를 입력해주세요 : ");
+		System.out.print("아이디 입력: ");
 		Long id = scan.nextLong();
 		mr.findById(id);
 	}

@@ -1,20 +1,21 @@
-package day30_20220428_01;
+package day0503;
 
 import java.util.Objects;
 
-public class MemberDTO {
-	private Long id;
-	private String memberId;
-	private String memberPassword;
-	private String memberName;
-	private int memberAge;
-	private String memberMobile;
-	
-	public MemberDTO() {
-		
+public class StudentDTO {
+
+	Long id;
+	String memberId;
+	String memberPassword;
+	String memberName;
+	String memberAge;
+	String memberMobile;
+
+	StudentDTO() {
+
 	}
 
-	public MemberDTO(Long id, String memberId, String memberPassword, String memberName, int memberAge,
+	public StudentDTO(Long id, String memberId, String memberPassword, String memberName, String memberAge,
 			String memberMobile) {
 		super();
 		this.id = id;
@@ -57,11 +58,11 @@ public class MemberDTO {
 		this.memberName = memberName;
 	}
 
-	public int getMemberAge() {
+	public String getMemberAge() {
 		return memberAge;
 	}
 
-	public void setMemberAge(int memberAge) {
+	public void setMemberAge(String memberAge) {
 		this.memberAge = memberAge;
 	}
 
@@ -75,8 +76,8 @@ public class MemberDTO {
 
 	@Override
 	public String toString() {
-		return "MemberDTO [id=" + id + ", memberId=" + memberId + ", memberPassword=" + memberPassword + ", memberName="
-				+ memberName + ", memberAge=" + memberAge + ", memberMobile=" + memberMobile + "]";
+		return "StudentDTO [id=" + id + ", memberId=" + memberId + ", memberPassword=" + memberPassword
+				+ ", memberName=" + memberName + ", memberAge=" + memberAge + ", memberMobile=" + memberMobile + "]";
 	}
 
 	@Override
@@ -84,7 +85,6 @@ public class MemberDTO {
 		return Objects.hash(id, memberAge, memberId, memberMobile, memberName, memberPassword);
 	}
 
-	// equals 메서드 재정의 
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -93,15 +93,10 @@ public class MemberDTO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		MemberDTO other = (MemberDTO) obj;
-		return Objects.equals(id, other.id) && memberAge == other.memberAge && Objects.equals(memberId, other.memberId)
-				&& Objects.equals(memberMobile, other.memberMobile) && Objects.equals(memberName, other.memberName)
-				&& Objects.equals(memberPassword, other.memberPassword);
+		StudentDTO other = (StudentDTO) obj;
+		return Objects.equals(id, other.id) && Objects.equals(memberAge, other.memberAge)
+				&& Objects.equals(memberId, other.memberId) && Objects.equals(memberMobile, other.memberMobile)
+				&& Objects.equals(memberName, other.memberName) && Objects.equals(memberPassword, other.memberPassword);
 	}
-	
-	
-	
-	
-	
-	
+
 }
