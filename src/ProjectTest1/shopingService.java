@@ -49,9 +49,9 @@ public class shopingService {
 	public void myPage() {
 		boolean run = true;
 		while (run) {
-			System.out.println("--------------------------------");
+			System.out.println("----------------------------------");
 			System.out.println("1.회원정보 2.포인트충전 3.회원탈퇴 4.돌아가기");
-			System.out.println("--------------------------------");
+			System.out.println("----------------------------------");
 			System.out.print("번호를 선택하세요 >");
 			int sel = scan.nextInt();
 			if (sel == 1) {

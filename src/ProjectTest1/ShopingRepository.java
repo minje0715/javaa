@@ -114,6 +114,16 @@ public class ShopingRepository {
 		shop5.setShopPrice(33000L);
 		shop5.setShopStar("★★★★★");
 		shoppingList.add(shop5);
+		
+		ShopingDTO shop6 = new ShopingDTO();
+		shop6.setShopId(6);
+		shop6.setShopName("슬리퍼");
+		shop6.setShopTitle("귀여운 슬리퍼");
+		shop6.setShopPrice(7000L);
+		shop6.setShopStar("★★★★☆");
+		shoppingList.add(shop6);
+		
+		
 	}
 
 	public List<ShopingDTO> findAll() {

@@ -76,8 +76,8 @@ public class ShopingMemberDTO {
 
 	@Override
 	public String toString() {
-		return "ShopingMemberDTO [memberId=" + memberId + ", memberPw=" + memberPw + ", memberEmail="
-				+ memberEmail + ", memberMobile=" + memberMobile + ", memberGender=" + memberGender + ", memberpoint="
+		return "[아이디= " + memberId + ", 비밀번호= " + memberPw + ", 이메일= "
+				+ memberEmail + ", 핸드폰 번호=" + memberMobile + ", 성별=" + memberGender + ", 보유포인트="
 				+ memberpoint + "]";
 	}
 

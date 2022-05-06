@@ -65,8 +65,8 @@ public class ShopingDTO {
 
 	@Override
 	public String toString() {
-		return "ShopingDTO [shopId=" + shopId + ", shopName=" + shopName + ", shopTitle=" + shopTitle + ", shopPrice="
-				+ shopPrice + ", shopStar=" + shopStar + "]";
+		return "[상품번호= " + shopId + " 상품이름= " + shopName + " 상품설명= " + shopTitle + " 상품가격= "
+				+ shopPrice + " 평균별점= " + shopStar + "]";
 	}
 
 	@Override
